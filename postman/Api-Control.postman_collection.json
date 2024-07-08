@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "c38aed33-ed17-4a6f-9296-b0417cad8240",
+		"name": "Api-Control",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34297119"
+	},
+	"item": [
+		{
+			"name": "Check API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/api/v1/hc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"v1",
+						"hc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/api/v1/check/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"v1",
+						"check",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"company_id\": 150,\n    \"company_abbreviation\": \"necteste\",\n    \"company_cnpj\": \"05335084000138\",\n    \"company_name\": \"teste postman\",\n    \"company_fantasy\": \"teste Postman\",\n    \"company_zip_code\": \"06683000\",\n    \"company_street\": \"string\",\n    \"company_number\": 10,\n    \"company_district\": \"string\",\n    \"company_fk_state_id\": 29,\n    \"company_fk_city_id\": 7411,\n    \"company_complement\": \"string\",\n    \"company_phone\": \"991276862\",\n    \"company_mail\": \"elias.neri@necbrasil.com.br\",\n    \"company_cellphone\": \"991276862\",\n    \"amount_logins_product\": 0,\n    \"user_password\": \"202cb962ac59075b964b07152d234b70\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/api/v1/newcompany",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"v1",
+						"newcompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check CNPJ Fast Flow",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/api/v1/checkcnpj/05335084000138",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"v1",
+						"checkcnpj",
+						"05335084000138"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
